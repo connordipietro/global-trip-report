@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: connordipietro.github.io/global-trip-report/sitemap.xml
