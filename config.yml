@@ -1,0 +1,111 @@
+baseURL: http://cdip.dev/
+languageCode: en-us
+title: Connor DiPietro
+paginate: 5
+theme: PaperMod
+
+
+enableInlineShortcodes: true
+
+enableRobotsTXT: true
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+enableEmoji: true
+
+googleAnalytics: G-W2KP6PW189
+publishdir: docs
+
+minify:
+  disableXML: true
+ # minifyOutput: true
+
+params:
+  env: production
+  title: Connor DiPietro
+  description: "Just a website"
+  author: Connor DiPietro
+  keywords: [Blog, Connor DiPietro, Programming, Learning, Lifestyle, Coding, Developing]
+
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  showShareButtons: true
+  showReadingTime: true
+  showToc: false
+  showBreadCrumbs: false
+  showPostNavLinks: true
+  comments: false
+  showToc: true
+  showCodeCopyButtons: true
+
+  homeInfoParams:
+    Title: Hey, I'm Connor. 👋
+    Content: >
+        - Curious Developer 👨‍💻 👨‍🚒      
+
+        - <br>
+  socialIcons:
+    - name: linkedin
+      url: https://linkedin.com/in/connorjdipietro
+    - name: github
+      url: https://github.com/connordipietro
+    - name: email
+      url: mailto:con@cdip.dev
+
+  outputs:
+    home:
+      - HTML
+      - RSS
+      - JSON
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+ 
+
+  editPost:
+    URL: "https://github.com/connordipietro/connordipietro.github.io/tree/main/content"
+    Text: "Suggest Edits"
+    appendFilePath: true
+
+  showPostNavLinks: true
+  showCodeCopyButtons: true
+
+  assets:
+    disableHLJS: true
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
+
+
+
+menu:
+  main:
+    - name: Archive
+      url: archives
+      weight: 1
+    - name: Categories
+      url: categories/
+      weight: 2
+    - name: Tags
+      url: tags/
+      weight: 3
+
